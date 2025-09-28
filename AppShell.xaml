@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="Mobiilirakendused_TARgv24.AppShell"
+    x:Name="rootShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:Mobiilirakendused_TARgv24"
+    Shell.FlyoutBehavior="Disabled"
+    Title="Mobiilirakendused_TARgv24"
+    Shell.BackgroundColor="Grey">
+    <Shell.TitleView>
+        <Label
+            Text="NÄIDISED"
+            FontFamily="PirataOne-Regular"
+            FontSize="30"
+            TextColor="Black"
+            CharacterSpacing="10" 
+            VerticalTextAlignment="Center"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+            Padding="25,25,25,25"
+            HeightRequest="200"
+        />
+    </Shell.TitleView>
+    <ShellContent
+        Title="Avaleht"
+        ContentTemplate="{DataTemplate local:StartPage}"
+        Route="StartPage" />
+</Shell>

@@ -17,6 +17,7 @@ public partial class StartPage : ContentPage
     VerticalStackLayout buttonPanel; // контейнер для кнопок
     Image menuIcon; // иконка (картинка)
 
+
     public StartPage()
 	{
 		Title = "Avaleht";

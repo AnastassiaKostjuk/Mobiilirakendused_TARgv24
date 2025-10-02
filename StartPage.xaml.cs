@@ -7,9 +7,9 @@ public partial class StartPage : ContentPage
 //partial означает, что часть его реализации может находиться в другом файле.
 //Наследуется от ContentPage → это базовый класс MAUI-страницы.
 {
-    public List<ContentPage> lehed = new List<ContentPage>() { new TekstPage(), new FigurePage(), new TimerPage(), new Valgusfoor(), new DateTimePage(), new SnowmanPage() };
+    public List<ContentPage> lehed = new List<ContentPage>() { new TekstPage(), new FigurePage(), new TimerPage(), new DateTimePage(), new PulsePage() };
     //lehed — список страниц (ContentPage), которые можно будет открыть при нажатии на кнопки.
-    public List<string> tekstid = new List<string>() { "Tekst'ga leht", "Figure leht", "Timer", "Valgusfoor", "Kuupäevad ja kellaajad", "Lumememm" };
+    public List<string> tekstid = new List<string>() { "Tekst page", "Figure page", "Timer page", "DateTime page", "Pusle page" };
     //tekstid — список строк (подписи для кнопок).
     //Каждая строка соответствует странице из списка lehed.
     ScrollView sv; //sv — скролл-контейнер.
@@ -21,6 +21,7 @@ public partial class StartPage : ContentPage
 	{
 		Title = "Avaleht";
 		BackgroundImageSource = "spaceman.jpg";
+
         //vsl = new VerticalStackLayout {  }; //Создаётся пустой вертикальный контейнер.
 
 
@@ -71,7 +72,7 @@ public partial class StartPage : ContentPage
         // иконка меню
         menuIcon = new Image
         {
-            Source = "planet.png",
+            Source = "heart.png",
             HeightRequest = 80,
             WidthRequest = 80,
             Margin = new Thickness(10),

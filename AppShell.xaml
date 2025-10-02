@@ -6,24 +6,11 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:Mobiilirakendused_TARgv24"
     Shell.FlyoutBehavior="Disabled"
-    Title="Mobiilirakendused_TARgv24"
-    Shell.BackgroundColor="Grey">
-    <Shell.TitleView>
-        <Label
-            Text="NÄIDISED"
-            FontFamily="PirataOne-Regular"
-            FontSize="30"
-            TextColor="Black"
-            CharacterSpacing="10" 
-            VerticalTextAlignment="Center"
-            VerticalOptions="Center"
-            HorizontalOptions="Center"
-            Padding="25,25,25,25"
-            HeightRequest="200"
-        />
-    </Shell.TitleView>
+    Shell.NavBarHasShadow="False"
+    Shell.BackgroundColor="Transparent"
+    Shell.TitleColor="Transparent">
+
     <ShellContent
-        Title="Avaleht"
         ContentTemplate="{DataTemplate local:StartPage}"
-        Route="StartPage" />
+        Route="StartPage"/>
 </Shell>
